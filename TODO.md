@@ -1,0 +1,57 @@
+# Task: Build NovaShop E-Commerce Platform
+
+## Plan
+- [x] Step 1: Design System Setup
+  - [x] Read config files (tailwind.config.js, index.css, package.json)
+  - [x] Create custom color palette (purple/coral/teal theme)
+  - [x] Update design tokens in index.css and tailwind.config.js
+- [x] Step 2: Supabase Backend Setup
+  - [x] Initialize Supabase
+  - [x] Create database schema (profiles, products, cart, wishlist, orders, reviews, categories)
+  - [x] Create image storage bucket
+  - [x] Set up RLS policies
+  - [x] Insert mock product data (20-30 products)
+- [x] Step 3: Core Infrastructure
+  - [x] Define TypeScript types
+  - [x] Create API layer for Supabase queries
+  - [x] Update AuthContext for username+password auth
+  - [x] Update RouteGuard for protected routes
+- [x] Step 4: Layout & Navigation
+  - [x] Create main layout with left sidebar
+  - [x] Create header with search, cart, user menu
+  - [x] Create footer with links
+  - [x] Set up routing in App.tsx
+  - [x] Mobile responsive navigation
+- [x] Step 5: Product Pages
+  - [x] Homepage (hero, categories carousel, featured products)
+  - [x] Product listing page with filters and sorting
+  - [x] Product detail page with gallery and reviews
+  - [x] Search results page
+- [x] Step 6: Shopping Features
+  - [x] Shopping cart page with full functionality
+  - [x] Wishlist page
+  - [x] Checkout flow
+  - [x] Orders history page
+- [x] Step 7: User & Seller Features
+  - [x] Login/Registration pages
+  - [x] User profile and account management
+  - [x] Seller dashboard with product management
+  - [x] Image upload for product images
+- [x] Step 8: Additional Pages
+  - [x] Customer support page with contact form
+  - [x] Footer pages (About, Contact, Terms, Privacy, Shipping, Returns)
+- [x] Step 9: Validation & Polish
+  - [x] Run lint and fix issues
+  - [x] Test all interactive elements
+  - [x] Verify responsive design
+  - [x] Ensure 100% functional buttons
+
+## Notes
+- Using Supabase Auth with username+password (simulated as email@miaoda.com)
+- Role-based access: user, seller, admin
+- Image upload with auto-compression to WEBP if >1MB
+- localStorage NOT used - all data in Supabase
+- Custom design: purple/coral/teal color scheme, NOT Amazon-like
+- Left sidebar navigation for unique layout
+- All 18 pages implemented with full functionality
+- Lint passed successfully
